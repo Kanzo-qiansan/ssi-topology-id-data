@@ -1,0 +1,18 @@
+# Sensor (monitored-line) placement, ready to paste into the MATLAB driver.
+# Each vector lists the BRANCH indices that are monitored (current measured on the
+# sending end; for a hybrid voltage+current device the sending-bus voltage is also
+# available). Indices refer to the branch order of the corresponding MATPOWER case
+# file (see branch_reference/<network>_branches.csv for the from/to bus of each id).
+# Sensor counts: 33-bus = 5, 69-bus = 10, 118-bus = 15, 533-bus = 50.
+
+# IEEE 33-bus
+sensor = [9 14 20 33 37];
+
+# IEEE 69-bus
+sensor = [7 9 10 11 12 15 16 45 71 72];
+
+# IEEE 118-bus
+sensor = [5 6 37 60 61 72 81 82 85 95 108 109 121 125 130];
+
+# 533-bus (Kraftringen)
+sensor = [1 2 3 4 5 6 7 17 18 19 20 22 25 27 28 29 30 31 32 33 34 60 65 66 68 69 70 71 72 73 74 78 79 80 109 149 150 151 237 259 260 261 262 263 272 273 274 275 280 281];
